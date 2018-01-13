@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="12dp"
+        android:foreground="?selectableItemBackground"
+        android:clickable="true">
+
+        <RelativeLayout
+            android:id="@+id/doaLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/videoDoa"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="16dp" />
+
+            <ImageView
+                android:id="@+id/imageDoa"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_toRightOf="@+id/videoDoa"
+                android:layout_below="@+id/titleDoa"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/titleDoa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/videoDoa"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/detailDoa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/titleDoa"
+                android:layout_toRightOf="@+id/imageDoa" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>

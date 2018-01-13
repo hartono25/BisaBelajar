@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="12dp"
+        android:foreground="?selectableItemBackground"
+        android:clickable="true" android:focusable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:id="@+id/hijaiyahLayout">
+
+            <ImageView
+                android:id="@+id/viewHijaiyah"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="16dp" android:contentDescription="" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/imageHijaiyah"
+                android:layout_toRightOf="@+id/viewHijaiyah"
+                android:layout_below="@+id/titleHijaiyah"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="5dp" android:contentDescription="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleHijaiyah"
+                android:layout_toRightOf="@+id/viewHijaiyah"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/detailHijaiyah"
+                android:layout_toRightOf="@+id/imageHijaiyah"
+                android:layout_below="@+id/titleHijaiyah" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
